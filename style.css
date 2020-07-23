@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Baloo Bhai', cursive;
+
+}
+/*BODY BACKGROUND*/
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(158, 131, 58, 0.8), rgba(136, 136, 206, 0.7) ), url(https://bilder.pcwelt.de/3572069_950x475.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+/*TITLE*/
+#title{
+    text-align: center;
+    color: #FFA500;
+    font-size: 3.5rem;
+}
+#description{
+    font-weight: lighter;
+    color: rgb(39, 37, 37);
+    text-align: center;
+    font-size: 1.6rem;
+}
+/*FROM SIZING*/
+#survey-form{
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    background: rgba(255, 115, 0, 0.678);
+}
+  /*FORM Styling*/
+  label,input,textarea,option{
+      display: block;
+  }
+  label{
+      font-weight: bold;
+      font-size: 1.8rem;
+      padding: 1% 1%;
+  }
+  #optional{
+      font-weight: lighter;
+      font-size: 0.9rem;
+  }
+  input{
+      font-size: 1.3rem;
+      padding: 1% 1%;
+      margin-left: 1%;
+  }
+  select, input[type="text"], input[type="number"], input[type="email"]{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-left: 1%;
+    border: 1px solid #ced4da;
+}
+#noob input, #carry input, #recommendations input{
+    display: inline-block;
+    
+}
+#noob, #carry, #recommendations{
+    margin-left: 1%;
+    font-size: 1.3rem;
+}
+input[type="checkbox"],input[type="radio"]{
+    width: 20px;
+    height: 15px;
+}
+/*Button*/
+#submit-btn{
+    width: 100%;
+    height: 5.8vh;
+    min-width: fit-content;
+    min-height:40px;
+    /*margin: 3.5rem 6rem;*/
+    background-color: rgb(24, 83, 49);
+    color: seashell;
+    border: 1px solid olive;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    text-align:center;
+    display: inline-block;
+    margin-top: 2rem;
+}
