@@ -1,13 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Ranked Survery Form</title>
 </head>
 <body>
-    Testing GIT
-    <p>Blaa</p>
+    <!--Title Section and Message-->
+    <header>
+        <h1 id="title">Ranked Survey Form Season 2020</h1>
+        <p id="description">Thank you for taking the time to help us know more about you</p>
+    </header>
+    <!--Form Body-->
+<section id="main-content">
+    <form id="survey-form" action="submit">
+        <label>Name</label>
+        <input name="name" type="text" required placeholder="Enter your name">
+        <label>Email</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email">
+        <label>Age <span id="optional">(optional)</span> </label>
+        <input id="number" name="age" type="number" min="10" max="99" placeholder="Age"> <!--required to have the id set as "number" by user-->
+        <label>Which option best describes your current role?</label>
+        <select>
+            <option value="" disabled selected>Select your Role</option>
+            <option value="adc">ADC</option>
+            <option value="support">Support</option>
+            <option value="mid">Midlaner</option>
+            <option value="jungler">Jungler</option>
+            <option value="top">Toplaner</option>
+          </select>
+        <label>Would you play ranked with a noob friend if they asked you?</label>
+        <div id="noob">
+        <input type="radio" name="play" value="definitely" checked> Definitely <br><br>
+        <input type="radio" name="play" value="maybe"> Maybe <br><br>
+        <input type="radio" name="play" value="not-sure"> Not sure <br><br>
+       </div>
+        <label >What is the lane you think can carry the most in "League of Legends"?</label>
+        <div id="carry">
+        <input value="adc" type="checkbox" checked>ADC <br><br>
+        <input value="support" type="checkbox">Support <br><br>
+        <input value="mid" type="checkbox">Midlaner <br><br>
+        <input value="jungler" type="checkbox">Jungler <br><br>
+        <input value="top" type="checkbox">Toplaner <br><br>
+        </div>
+        <label name="improvments">What would you like to see improved? (Check all that apply)</label>
+        <div id="recommendations">
+        <input type="checkbox">More Champions to be added to the game.<br><br>
+        <input type="checkbox">Enhance practice tool. <br><br>
+        <input type="checkbox">Remove Yasuo <br><br>
+        <input type="checkbox">Nerf Master Yi? No? <br><br>
+        <input type="checkbox" checked> Buff Teemo <br><br>
+        </div>
+        <label name="comment">Any comments or suggestions?</label> 
+        <textarea id="comments" class="input-textarea" name="comment" cols="70" rows="5"  placeholder="Enter your comment here..."></textarea>
+
+        <button id="submit-btn" value="Submit">Submit</button>
+
+    </form>
+</section>
+  <div id="mocha"></div>
 </body>
 </html>
